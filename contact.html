@@ -7,42 +7,53 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
-	<body>
 
+	<body>
 		<!--Header-->
 		<header>
-			<h1>Jhongert Fuertes</h1>
-			<nav>
-				<a href="index.html">About</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-
+			<div class="container">
+				<nav class="navbar">
+				    <div class="navbar-header">
+				      	<a href="#"><h1>Jhongert Fuertes</h1></a>
+				    </div>
+				    
+				    <div class="navbar-nav">
+				    	<a href="index.html">About</a>
+				    	<a href="portfolio.html">Portfolio</a>
+				    	<a href="contact.html">Contact</a>
+				    </div>
+				 </nav>
+			</div>
 		</header>
 		
-		<!--Main-->
-		<main>	
-			<h1>Contact</h1>
-			<hr>
-			<form>
-				<label>Name</label>
-				<input type="text" name="name" placeholder="John Smith">
-				<label>Email</label>
-				<input type="text" name="email" placeholder="example@gmail.com">
-				<label>Message</label>
-				<textarea name="message" rows="10"></textarea>
-				<input type="submit" name="submit">
-			</form>
-		</main>
+		<div class="container clearfix">
+			<!--Main-->
+			<main class="main-content" role="main">	
+				<h1>Contact</h1>
+				<hr>
+				<form>
+					<label>Name</label>
+					<input type="text" name="name" placeholder="John Smith">
+					<label>Email</label>
+					<input type="text" name="email" placeholder="example@gmail.com">
+					<label>Message</label>
+					<textarea name="message" rows="10"></textarea>
+					<input type="submit" name="submit" class="btn">
+				</form>
+			</main>
 
-		<!--Sidebar-->
-		<aside>
-			<h2>Connect with Me</h2>
-			<hr>
-			<img src="assets/images/github.png">
-			<img src="assets/images/linkedin.png">
-			<img src="assets/images/stackoverflow.png">
-		</aside>
+			<!--Sidebar-->
+			<aside class="sidebar">
+				<h2>Connect with Me</h2>
+				<hr>
+				<div class="social">
+					<a href="#"><img src="assets/images/github.png"></a>
+					<a href="#"><img src="assets/images/linkedin.png"></a>
+					<a href="#"><img src="assets/images/stackoverflow.png"></a>
+				</div>
+			</aside>
+			<!-- End sidebar -->
+		</div> <!-- End container -->
 
 		<!--Footer-->
 		<footer>

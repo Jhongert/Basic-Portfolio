@@ -34,8 +34,7 @@ body {
 .main-content {
 	width: 650px;
 	padding: 20px;
-	margin-top: 30px;
-	margin-right: 20px;
+	margin: 30px 20px 30px 0;
 	background-color: white;
 	float: left;
 	border: 1px solid #dddddd;
@@ -89,16 +88,14 @@ header {
 	padding: 10px 26px 10px;
 	line-height: 28px;
 	background-color: #4aaaa5;
-}
-
-.navbar-header a{
-	text-decoration: none; 
+	text-align: center;
 	color: white; 
 }
 
 .navbar a:nth-child(n+2) {
-    border-left: 1px solid #cccccc;  
+    border-left: 1px solid #eeeeee;  
     padding-left: 20px; 
+    margin-left: 15px
 }
 .navbar-header h1{color: white!important}
 
@@ -107,11 +104,6 @@ header {
 	padding-top: 26px;
 	padding-bottom: 26px;
 	line-height: 28px;
-}
-
-.navbar-nav a{
-	text-decoration: none; 
-	margin-left: 15px
 }
 
 .navbar a:link { color: #cccccc; }
@@ -145,10 +137,15 @@ header {
 .social a:nth-child(-n+2) {
     margin-right: 14px;
 }
+
+.social img:hover{
+	opacity: 0.8;
+}
 /*end sidebar********************************************/
 
 
-h1, h2, h3 {
+/* Elements ********************************************/
+h1, h2 {
 	font-family: font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #4aaaa5;
 	font-weight: bold;
@@ -165,6 +162,10 @@ h2 {
 	margin-bottom:10px;
 }
 
+a {
+	text-decoration: none; 
+} 
+
 label, input{
 	display: block;
 }
@@ -176,29 +177,16 @@ input[type="text"]{
 	font-size: 16px;
 }
 
-::-webkit-input-placeholder {
-  color: #ccc;
-  opacity: 1;
-}
-
-::-moz-placeholder {
-  color: #ccc;
-  opacity: 1;
-}
-
-::-ms-input-placeholder {
-  color: #ccc;
-  opacity: 1;
-}
-
-input::placeholder {
-  color: #ccc;
-  opacity: 1;
-}
+::-webkit-input-placeholder { color: #ccc; opacity: 1;}
+::-moz-placeholder { color: #ccc; opacity: 1;}
+::-ms-input-placeholder { color: #ccc; opacity: 1;}
+input::placeholder { color: #ccc; opacity: 1;}
 
 textarea {
 	width: 100%;
 	border-color: #dddddd;
+	font-size: 16px;
+	height: 100px;
 }
 
 .btn{
@@ -213,3 +201,35 @@ textarea {
 .btn:hover{
 	background: #29908b;
 }
+
+/* End elements *********************************/
+
+/* Portfolio images *****************************/
+.work{
+	width: 284px;
+	float: left;
+	position: relative;
+}
+
+.work:nth-child(odd) {
+    margin-right: 40px;
+}
+.work img{
+	width: 100%;
+}
+
+.work h2 {
+    background: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    bottom: 20px;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-weight: 300;
+    position: absolute;
+    width: 100%;
+    bottom: 25px;
+ }
+
+ /* End portfolio *******************************/

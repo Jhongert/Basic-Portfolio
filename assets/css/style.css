@@ -8,13 +8,13 @@ html{
 }
 
 body {
-	background-image: url("../images/concrete_seamless.png");
+	background-image: url("../images/noisy.png");
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 18px;
 	color: #777777;
 	line-height: 150%;
 	margin:0 0 80px; 
-	/* margin-bottom 50px = footer height. This is to make the sticky footer*/
+	/* margin-bottom 80px = footer height. This is to make the sticky footer*/
 }
 
 .container {
@@ -146,7 +146,7 @@ header {
 
 /* Elements ********************************************/
 h1, h2 {
-	font-family: font-family: 'Georgia', Times, Times New Roman, serif;
+	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #4aaaa5;
 	font-weight: bold;
 	margin-bottom: 10px;
@@ -205,20 +205,20 @@ textarea {
 /* End elements *********************************/
 
 /* Portfolio images *****************************/
-.work{
+.portfolio-item{
 	width: 284px;
 	float: left;
 	position: relative;
 }
 
-.work:nth-child(odd) {
+.portfolio-item:nth-child(odd) {
     margin-right: 40px;
 }
-.work img{
+.portfolio-item img{
 	width: 100%;
 }
 
-.work h2 {
+.portfolio-item h2 {
     background: #4aaaa5;
     color: #ffffff;
     text-align: center;

@@ -232,4 +232,8 @@ textarea {
     bottom: 25px;
  }
 
- /* End portfolio *******************************/
+.portfolio-item h2:hover{
+	background: #29908b;
+}
+}
+ /* End portfolio *******************************/}
